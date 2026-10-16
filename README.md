@@ -27,10 +27,9 @@ Open `src/App.jsx` and update the `profile` object:
 
 Also update the project cards in the `projects` array so each GitHub link points to the specific repository. The starter currently points to your GitHub profile because individual repository URLs have not been confirmed.
 
-If you want to add a downloadable resume:
-1. Create a `public` folder.
-2. Put your resume PDF inside it as `resume.pdf`.
-3. Add a link such as `<a href="/resume.pdf" download>Download résumé</a>` where you want it in the UI.
+A resume PDF is included at `public/resume.pdf`, and the hero section has a **Download Resume** button. Replace that file whenever you update your resume.
+
+The YouTube RAG and Credit Risk project cards point to repositories verified on your GitHub profile. The Customer Churn card currently links to your GitHub profile because its specific repository URL has not yet been confirmed. Update the `github` value for project 03 in `src/App.jsx` once you have the correct repository URL.
 
 Review the experience, education, certifications, and project descriptions for accuracy before publishing.
 
