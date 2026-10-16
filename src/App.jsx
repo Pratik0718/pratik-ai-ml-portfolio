@@ -30,7 +30,7 @@ const projects = [
     stack: ["Python", "LangChain", "Hugging Face", "FAISS", "Streamlit"],
     icon: MessageSquareText,
     color: "violet",
-    github: "https://github.com/Pratik0718",
+    github: "https://github.com/Pratik0718/YouTube_ChatBot-Using-RAG",
     demo: "",
   },
   {
@@ -47,7 +47,7 @@ const projects = [
     stack: ["Python", "XGBoost", "LightGBM", "SHAP", "MLflow", "FastAPI"],
     icon: ShieldCheck,
     color: "cyan",
-    github: "https://github.com/Pratik0718",
+    github: "https://github.com/Pratik0718/Credit_Risk_Assessment",
     demo: "",
   },
   {
@@ -134,6 +134,7 @@ function App() {
             </p>
             <div className="hero-actions">
               <a className="button button-primary" href="#projects">Explore my work <ArrowDownRight size={17} /></a>
+              <a className="button button-quiet" href="/resume.pdf" download="Pratik_Khetmalis_Resume.pdf"><FileText size={17} /> Download Resume <ArrowDownRight size={15} /></a>
               <a className="button button-quiet" href={profile.github} target="_blank" rel="noreferrer"><Github size={17} /> GitHub <ArrowUpRight size={15} /></a>
             </div>
             <div className="hero-meta">
@@ -216,7 +217,7 @@ function App() {
                   <p className="project-description">{project.description}</p>
                   <div className="project-tags">{project.stack.map(tag => <span key={tag}>{tag}</span>)}</div>
                   <div className="project-links">
-                    <a href={project.github} target="_blank" rel="noreferrer">View on GitHub <ArrowUpRight size={15} /></a>
+                    <a href={project.github} target="_blank" rel="noreferrer">{project.number === "03" ? "Browse GitHub profile" : "View repository"} <ArrowUpRight size={15} /></a>
                     {project.demo && <a href={project.demo} target="_blank" rel="noreferrer">Live demo <ArrowUpRight size={15} /></a>}
                   </div>
                 </div>
